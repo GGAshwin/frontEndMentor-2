@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+  body{
+      height: 100vh;
+  }
+  .container{
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      height: 70%;
+      width: 75%;
+      border: 2px solid black;
+      border: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box{
+          height: 100%;
+          color: white;
+          .content{
+              margin-left: 30px;
+              img{
+                  margin-top: 30px;
+                  margin-bottom: 10px;
+              }
+              p{
+                  width: 75%;
+                  line-height: 2;
+                  font-size: 15px;
+                  font-family:'Lexend Deca', sans-serif; 
+                  font-weight: 400;
+              }
+              button{
+                  padding:15px 20px 15px 20px;
+                  margin-top: 60px;
+                  border-radius: 30px;
+                  border: 0;
+                  font-family:'Lexend Deca', sans-serif;
+                  background-color: hsl(0, 0%, 95%);
+                  cursor: pointer;
+              }
+              h1{
+                font-family: 'Big Shoulders Display', cursive;
+                font-weight: 700;
+              }
+          }
+      }
+  }
+
+  footer{
+      position: absolute;
+      transform: translate(-50%,-50%);
+      bottom: 0;
+      left: 50%;
+  }
+  #box1{
+      background-color:hsl(31, 77%, 52%) ;
+      border-radius: 5px 0 0 5px;
+  }
+  #box2{
+      background-color: hsl(184, 100%, 22%);
+  }
+  #box3{
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0px 5px 5px 0;
+  }
+  #bt1{
+      color: hsl(31, 77%, 52%);
+  }
+  #bt2{
+      color:hsl(184, 100%, 22%) ;
+  }
+  #bt3{
+      color:hsl(179, 100%, 13%) ;
+  }
+  #bt1:hover{
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      transition: 0.6s ease;
+  }
+  #bt2:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.6s ease;
+}
+#bt3:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.6s ease;
+}
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(0, 100%, 68%);
+    font-family: sans-serif;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+        border: 0;
+        position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 40%;
+        .box{
+            .content{
+                button{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    footer {
+        display: none;
+     }
+    #box1{
+        border-radius: 5px 5px 0 0 ;
+    }
+    #box3{
+        border-radius: 0 0 5px 5px;
+    }
+  }
